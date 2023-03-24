@@ -1,11 +1,8 @@
-# create file /tmp/holberton
-# permission 0744
-# owner and group is www-data
-# file contains I love Puppet
-file { '/tmp/holberton':
-    ensure  => file,
-    mode    => '0744',
+# This manifest creates a file at /tmp
+file { '/tmp/school':
+    ensure  => 'file',
     owner   => 'www-data',
     group   => 'www-data',
-    content => 'I love Puppet'
+    mode    => '0744',
+    content => 'I love Puppet',
 }
